@@ -1,6 +1,8 @@
-body{
+html,body{
+    padding: 0;
+    margin: 0;
     position: relative;
-    height: 98.58vh;
+    height: 100%;
     background-image: linear-gradient(to bottom right, #002347, #003F7D);
 }
 
@@ -15,31 +17,52 @@ body{
     transform: translate(-50%, -50%);
     box-shadow: rgba(0,0,0,0.5) 4px 4px 10px;
 }
-.titel{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.titel h2{
+    font-size: 165px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 15s%;
+    margin: auto;
     text-align: center;
     font-family: Montserrat, serif;
     color: #fff;
 }
 
-.titel h2{
-    font-size: 165px;
-    margin: 0px;
-}
-
 .name{
     font-size: 30px;
-    margin: 0px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    font-family: Montserrat, serif;
+    color: #fff;
 }
 
-.arrow{
+.sub{
     position: relative;
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%, -50%);
-    margin-top: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    font-family: Montserrat, serif;
+    color: #fff;
+}
+
+
+.arrow{
+    display: block;
+    position: relative;
+    margin: 0 auto;
     height: 64px;
 }
