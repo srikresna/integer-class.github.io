@@ -1,0 +1,45 @@
+body{
+    position: relative;
+    height: 98.58vh;
+    background-image: linear-gradient(to bottom right, #002347, #003F7D);
+}
+
+.bg{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0,0,0,0.5) 4px 4px 10px;
+}
+.titel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Montserrat, serif;
+    color: #fff;
+}
+
+.titel h2{
+    font-size: 165px;
+    margin: 0px;
+}
+
+.name{
+    font-size: 30px;
+    margin: 0px;
+}
+
+.arrow{
+    position: relative;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    height: 64px;
+}
