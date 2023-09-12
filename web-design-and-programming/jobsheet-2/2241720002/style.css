@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 1rem;
+  background-color: #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 1280px;
+  height: 600px;
+  background-color: white;
+  border: 0.125rem solid #0f172a;
+  box-shadow: 0.25rem 0.25rem 0 #0f172a;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  position: sticky;
+}
+
+.navbar__container {
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 0.125rem solid #0f172a;
+}
+
+.navbar__menu {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 1rem;
+  border-left: 0.125rem solid #020617;
+  background-color: white;
+}
+
+.navbar__links {
+  display: block;
+  color: #0f172a;
+  text-decoration: none;
+  font-family: "Lora", serif;
+}
+
+.navbar__logo {
+  font-family: "Lora", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #020617;
+  text-decoration: none;
+  background-color: #fda4af;
+  padding: 0.75rem 2.5rem;
+  border-right: 0.125rem solid #0f172a;
+}
+
+.wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-image: linear-gradient(to bottom, white, transparent),
+    url("./public/hexagons.svg");
+  background-repeat: no-repeat, repeat;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0;
+}
+
+.section__subheading {
+  display: block;
+  font-family: "Lora", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section__heading {
+  font-family: "Lora", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.star {
+  position: absolute;
+  top: 5rem;
+  left: -1.5rem;
+  width: 3rem;
+  height: 3rem;
+  transform: rotateZ(35deg);
+  color: #fcd34d;
+  stroke: #0f172a;
+  stroke-width: 0.75rem;
+  z-index: 10;
+}
+
+.moon {
+  position: absolute;
+  top: 20rem;
+  right: -1.5rem;
+  width: 3rem;
+  height: 3rem;
+  transform: rotateZ(-60deg);
+  color: #fcd34d;
+  stroke: #0f172a;
+  stroke-width: 0.75rem;
+  z-index: 10;
+}
+
+.section__head {
+  border-bottom: 0.125rem solid #0f172a;
+  margin-bottom: 2rem;
+}
+
+.section__profession-title,
+.section__tech-title {
+  font-family: "Lora", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #0f172a;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.profession {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.profession__block {
+  font-family: "Rubik", serif;
+  padding: 0.5rem 1rem;
+  border: #0f172a 0.125rem solid;
+  box-shadow: 0.25rem 0.25rem 0 #0f172a;
+  font-size: 0.8rem;
+  background-color: white;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tech__block {
+  font-family: "Rubik", serif;
+  padding: 0.5rem 1rem;
+  border: #0f172a 0.125rem solid;
+  box-shadow: 0.25rem 0.25rem 0 #0f172a;
+  font-weight: 500;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.tech__block svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+#react {
+  background-color: #93c5fd;
+}
+
+#svelte {
+  background-color: #fdba74;
+}
+
+#nodejs {
+  background-color: #bef264;
+}
+
+#remix {
+  background-color: #a5b4fc;
+}
+
+#typescript {
+  background-color: #7dd3fc;
+}
+
+#flutter {
+  background-color: #7dd3fc;
+}
+
+#net {
+  background-color: #6ee7b7;
+}
+
+#csharp {
+  background-color: #a5b4fc;
+}
+
+.about__title {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.about__wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.about__content {
+  font-family: "Rubik", serif;
+  font-size: 1rem;
+  color: #0f172a;
+  margin: 2rem 0;
+  line-height: 1.75em;
+}
+
+.section__portfolio-title {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-align: center;
+}
+
+.section__portfolio-description {
+  font-family: "Rubik", serif;
+  font-size: 1rem;
+  color: #0f172a;
+  margin: 1rem 0;
+  line-height: 1.75em;
+}
+
+.section__portfolio-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  max-width: 800px;
+  gap: 1rem;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  border: 0.125rem solid #0f172a;
+  box-shadow: 0.25rem 0.25rem 0 #0f172a;
+  background-color: white;
+  position: relative;
+}
+
+.portfolio-card__title {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  padding: 1rem;
+}
+
+.portfolio-card__description {
+  font-family: "Rubik", serif;
+  font-size: 0.8rem;
+  color: #0f172a;
+  line-height: 1.75em;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.portfolio-card__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.contact {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  background-color: white;
+  border: 0.125rem solid #0f172a;
+  box-shadow: 0.25rem 0.25rem 0 #0f172a;
+  z-index: 10;
+}
+
+.contact__item svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #0f172a;
+}
