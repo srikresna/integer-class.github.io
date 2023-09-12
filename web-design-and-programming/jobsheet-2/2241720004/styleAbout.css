@@ -1,6 +1,8 @@
-body{
+html,body{
+    padding: 0;
+    margin: 0;
     position: relative;
-    height: 98.58vh;
+    height: 100%;
     background-image: linear-gradient(to bottom right, #002347, #003F7D);
 }
 
@@ -15,20 +17,30 @@ body{
     transform: translate(-50%, -50%);
     box-shadow: rgba(0,0,0,0.5) 4px 4px 10px;
 }
+
 .titel{
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 4rem;
     text-align: center;
     font-family: Montserrat, serif;
     color: #fff;
 }
 
 .meme{
-    height: 560px;
+    height: 65%;
     overflow-y: scroll;
 }
+
+.meme img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: contain;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -62,11 +74,9 @@ body{
 }
 
 .home{
+    display: block;
     position: relative;
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%, -50%);
-    margin-top: 100px;
+    margin: 0 auto;
     height: 64px;
 }
 
